@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Process</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .step {
+            width: 30px;
+            height: 30px;
+            background-color: #ccc;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        #payment-success {
+            display: none;
+            text-align: center;
+            padding: 100px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px #aaa;
+            margin: 50px auto;
+            max-width: 600px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="steps">
+        <div class="step" id="step1">1</div>
+        <div class="step" id="step2">2</div>
+        <div class="step" id="step3">3</div>
+    </div>
+    <div class="payment-success" id="payment-success">
+        <h1>Payment Successful</h1>
+        <p>Thank you for your payment.</p>
+        <p>Your order has been successfully processed.</p>
+    </div>
+    <script>
+        const steps = document.querySelectorAll('.step');
+        const paymentSuccess = document.getElementById('payment-success');
+
+        let currentStep = 0;
+
+        function moveToNextStep() {
+            if (currentStep < steps.length) { // Corrected this condition
+                steps[currentStep].style.backgroundColor = '#007BFF';
+                currentStep++;
+                setTimeout(moveToNextStep, 1000); // Transition to the next step after 1 second (adjust as needed)
+            } else {
+                showPaymentSuccess();
+            }
+        }
+
+        function showPaymentSuccess() {
+            
+            steps[currentStep - 1].style.backgroundColor = '#007BFF';
+            paymentSuccess.style.display = 'block';
+        }
+
+        moveToNextStep();
+    </script>
+</body>
+</html>

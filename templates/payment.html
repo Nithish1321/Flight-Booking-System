@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link href="{{url_for('static',filename='/css/payment.css')}}" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            
+            <div class="checkout-text">
+    
+                <div class="back-to-home">
+                    <a href="/customerdetail">Back to information</a>
+                    <img src="https://img.icons8.com/sf-regular/48/aaaaaa/forward.png" alt="Arrow" height="15px" width="15px" />
+                    <a href="">Payment</a>
+                </div>
+
+                <div class="pay-button">
+                    <button>
+                        <img src="https://img.icons8.com/ios-filled/50/FFFFFF/mac-os.png" alt="Apple-Pay" height="20px" width="20px" />
+                        <span>Pay</span>
+                    </button>
+                </div>
+
+                <div class="or-line">
+                    <p>Or pay with card</p>
+                </div>
+    
+                <div class="card-details">
+                    <label>Card details</label>
+                    <div class="card-number">
+                        <input type="number" placeholder="4242 4242 4242 4242" />
+                        <div>
+                            <img src="https://img.icons8.com/color/48/000000/visa.png" height="20px" width="20px" />
+                            <img src="https://img.icons8.com/color/48/000000/mastercard.png" height="20px" width="20px" />
+                            <img src="https://img.icons8.com/color/48/000000/amex.png" height="20px" width="20px" />
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <div class="mm-yy">
+                            <input type="number" placeholder="MM / YY" />
+                        </div>
+                        <div class="cvc">
+                            <input type="number" placeholder="CVC" />
+                            <img src="https://img.icons8.com/ios/50/000000/card-verification-value.png" height="20px" width="20px" />
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="owner-name">
+                    <label>Card Holder name:</label>
+                    <input type="text" placeholder="Nithish" />
+                </div>
+    
+              
+    
+                <button onclick="window.location.href='/payprocess'"   class="buy-button">Pay $583.98</button>
+    
+            </div>
+        </div>
+ </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    flex: 0 0 18%; 
+    width: 85%; /* Adjust the width as needed */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="flex-container">
+            <div class="flex-item">Element 1</div>
+            <div class="flex-item">Element 2</div>
+            <div class="flex-item">Element 3</div>
+            <div class="flex-item">Element 4</div>
+            <div class="flex-item">Element 5</div>
+        </div>
+    </div>
+</body>
+</html>

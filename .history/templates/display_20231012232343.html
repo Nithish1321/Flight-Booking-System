@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Global styles for your page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Card styles */
+        .card {
+            width: 900px;
+            border: 1px solid #ccc;
+            padding: 10px; /* Increased padding for better spacing */
+            margin: 20px auto; /* Center the card horizontally */
+            background-color: #fff; /* White background */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add shadow */
+            border-radius: 10px; /* Rounded corners */
+            margin-top: 200px;
+        }
+
+        /* Flex container styles */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .flex-item {
+            flex: 1; /* Use 1 to distribute space equally */
+            padding: 5px;
+        }
+
+        /* Button styles */
+        #button {
+            margin-top: 30px; /* Adjust the margin for better alignment */
+            background-color: #007bff; /* Blue background color */
+            color: #fff; /* White text color */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Additional spacing */
+        #space {
+            height: 20px; /* Reduced spacing */
+        }
+    </style>
+</head>
+<body>
+    <h1>Flight Details</h1>
+    <div id="flightDetails">
+        <h2>Available Flights:</h2>
+    </div>
+    {% for flight in flights %}
+    <div class="card">
+        <div class="flex-container">
+            <div class="flex-item"><img src="/static/img/ss.jpg" alt="" width="50px" height="50px" id="img"></div>
+            <div class="flex-item">
+                <div><h5>Flight number:</h5></div>
+                <div><p> {{ flight.flight_number }}</p></div>
+            </div>
+            <div class="flex-item">
+                <div><h5>Flight From:</h5></div>
+                <div><p>{{ flight.from }}</p></div>
+            </div>
+            <div class="flex-item">
+                <div><h5>Flight To:</h5></div>
+                <div><p>{{ flight.to }}</p></div>
+            </div>
+            <div class="flex-item">
+                <div><h5>Departure Time:</h5></div>
+                <div><p>  {{ flight.departure_time }}</p></div>
+            </div>
+            <div class="flex-item">
+                <div><h5>Arrival Time:</h5></div>
+                <div><p>{{flight.arriving_time}}</p></div>
+            </div>
+            <div class="flex-item">
+                <div></div>
+                <div><button id="button">BOOK</button></div>
+            </div>
+        </div>
+    </div>
+    <div id="space"></div>
+    {% endfor %}
+</body>
+</html>

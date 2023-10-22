@@ -1,0 +1,61 @@
+
+
+.card-header img {
+    max-width: 100%;
+    height: auto;
+}
+/* styles.css */
+/* styles.css */
+/* styles.css */
+.card {
+    width: 50%; /* Set the card width to 50% of the page */
+    margin: 0 auto; /* Center the card horizontally */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.thin-heading {
+    font-weight: normal; /* Reduce heading thickness */
+    text-align: left; /* Align the heading text to the left */
+    font-size: 20px; /* Adjust the font size as needed */
+}
+
+.sky-blue {
+    color: skyblue;
+}
+
+.name-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Add space between the name fields and email field */
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+   
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select[id="classOfService"],
+input[type="number"],
+textarea[id="specialRequests"]{
+    width: 75%; /* Reduce the width of the input boxes */
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Reduce the thickness of input box borders */
+    border-radius: 4px; /* Add some border radius for a softer look */
+}

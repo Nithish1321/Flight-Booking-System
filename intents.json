@@ -1,0 +1,251 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello",
+        "Hi",
+        "Hey",
+        "Greetings",
+        "Good day",
+        "How are you doing?"
+      ],
+      "responses": [
+        "Hello! Welcome to our flight booking system.",
+        "Hi there! How can we assist you today?",
+        "Hey! How can we help you book your flight?",
+        "Greetings! How may we assist you?",
+        "Good day! What can we do for you today?",
+        "I'm here to help! How can I assist you?"
+      ]
+    },
+    {
+      "tag": "fare_inquiry",
+      "patterns": [
+        "What's the fare for a flight from [departure_city] to [arrival_city] on [departure_date]?",
+        "How much does a ticket cost from [departure_city] to [arrival_city] on [departure_date]?",
+        "Tell me the price for a flight from [departure_city] to [arrival_city] on [departure_date]."
+      ],
+      "responses": [
+        "To provide the fare, I need to check the available flights. Please wait a moment while I fetch the information for you.",
+        "Let me find the fare for you.",
+        "The fare for a flight from [departure_city] to [arrival_city] on [departure_date] will depend on the available flights. Let me check."
+      ]
+    },
+    {
+      "tag": "booking_inquiry",
+      "patterns": [
+        "I want to book a flight from [departure_city] to [arrival_city] on [departure_date] for [number_of_passengers] people.",
+        "Book a flight from [departure_city] to [arrival_city] for [number_of_passengers] on [departure_date].",
+        "How can I reserve a flight from [departure_city] to [arrival_city] on [departure_date] for [number_of_passengers]?",
+        "Flight booking for [number_of_passengers] from [departure_city] to [arrival_city] on [departure_date]."
+      ],
+      "responses": [
+        "Sure, I can help you with that. Please wait while I find available flights.",
+        "I can assist you with flight booking. Let me check for available flights.",
+        "Great! Let me find you the best flight options for [number_of_passengers] from [departure_city] to [arrival_city] on [departure_date]."
+      ]
+    },
+    {
+      "tag": "special_offers",
+      "patterns": [
+        "Are there any special offers available?",
+        "Tell me about discounts",
+        "What promotions are currently running?",
+        "Do you have any deals?"
+      ],
+      "responses": [
+        "Yes, we have some special offers available. Would you like to know more about them?",
+        "Certainly! We have several promotions running right now.",
+        "We do offer special discounts and promotions. Would you like to hear about them?",
+        "Absolutely! We have some fantastic deals currently available."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Goodbye",
+        "Bye",
+        "See you later",
+        "Farewell",
+        "Take care"
+      ],
+      "responses": [
+        "Goodbye! If you have any more questions, feel free to ask.",
+        "Bye! Have a great day!",
+        "Farewell! If you need any further assistance, don't hesitate to reach out.",
+        "See you later! Take care and have a safe journey.",
+        "Take care! If you decide to book later, we'll be here to help."
+      ]
+    },
+    {
+      "tag": "cabin_class",
+      "patterns": [
+        "What are the cabin classes available?",
+        "Tell me about cabin classes",
+        "Different cabin classes"
+      ],
+      "responses": [
+        "We offer Economy, Business, and First Class cabin classes for your comfort and preference.",
+        "There are three cabin classes available: Economy, Business, and First Class. Which one are you interested in?",
+        "You can choose from three cabin classes: Economy, Business, and First Class for your flight."
+      ]
+    },
+    {
+      "tag": "baggage_information",
+      "patterns": [
+        "What is the baggage allowance?",
+        "Tell me about baggage rules",
+        "How much luggage can I bring?"
+      ],
+      "responses": [
+        "Baggage allowances may vary by airline. I can provide you with details once you specify the airline.",
+        "The baggage allowance depends on the airline you choose. Please let me know which airline you are interested in.",
+        "To provide baggage information, I'll need to know your airline. Could you please specify your airline choice?"
+      ]
+    },
+    {
+      "tag": "flight_status",
+      "patterns": [
+        "How can I check my flight status?",
+        "Tell me about flight tracking",
+        "Is my flight on time?"
+      ],
+      "responses": [
+        "You can check your flight status on our website by entering your flight details.",
+        "For flight tracking, please visit our flight status page and enter your flight information.",
+        "To check if your flight is on time, provide me with your flight details, and I'll assist you."
+      ]
+    },
+    {
+      "tag": "payment_options",
+      "patterns": [
+        "What payment options are available?",
+        "How can I pay for my booking?",
+        "Accepted payment methods"
+      ],
+      "responses": [
+        "We accept payments through Visa, MasterCard, American Express, and PayPal.",
+        "You can pay for your booking using Visa, MasterCard, American Express, or PayPal.",
+        "We offer various payment methods, including Visa, MasterCard, American Express, and PayPal, to make your booking convenient."
+      ]
+    },
+    {
+      "tag": "refund_policy",
+      "patterns": [
+        "What is your refund policy?",
+        "Tell me about cancellations",
+        "Can I get a refund?"
+      ],
+      "responses": [
+        "Our refund policy depends on the type of ticket you purchase. I can provide more details once you specify your booking details.",
+        "Refund options vary based on the fare type. Please provide your booking information, and I'll assist you further.",
+        "Refund eligibility depends on your ticket type. Please share your booking details for more information."
+      ]
+    },
+    {
+      "tag": "seat_selection",
+      "patterns": [
+        "How can I choose my seats?",
+        "Tell me about seat selection",
+        "Can I reserve specific seats?"
+      ],
+      "responses": [
+        "You can select your seats during the booking process or by visiting the 'Manage Booking' section on our website.",
+        "To choose your seats, you can do so during the booking process or through our seat selection feature on our website.",
+        "Yes, you can reserve specific seats during the booking or by accessing the 'Manage Booking' option on our website."
+      ]
+    },
+    {
+      "tag": "inflight_services",
+      "patterns": [
+        "What inflight services do you offer?",
+        "Tell me about onboard amenities",
+        "What's included during the flight?"
+      ],
+      "responses": [
+        "Our flights offer a range of inflight services, including meals, entertainment, and Wi-Fi. Details may vary by flight.",
+        "You can enjoy a variety of onboard amenities, including meals, entertainment, and Wi-Fi. Specifics may differ depending on the flight.",
+        "During your flight, you can enjoy amenities such as meals, entertainment, and Wi-Fi. Please check your flight details for specifics."
+      ]
+    },
+    {
+      "tag": "check_in",
+      "patterns": [
+        "How can I check in for my flight?",
+        "Tell me about the check-in process",
+        "When should I check in?"
+      ],
+      "responses": [
+        "You can check in for your flight online through our website or mobile app. The recommended time for check-in varies by airline, typically 24-48 hours before your departure.",
+        "The check-in process can be completed online via our website or app. Please check your booking details for the recommended check-in time.",
+        "To check in for your flight, you can use our online check-in service. The ideal time to do this is usually 24-48 hours prior to your departure."
+      ]
+    },
+    {
+      "tag": "change_flight",
+      "patterns": [
+        "Can I change my flight?",
+        "Tell me about flight changes",
+        "What's your flight change policy?"
+      ],
+      "responses": [
+        "Flight changes may be possible depending on your ticket type and fare rules. Please provide your booking details, and I'll assist you further.",
+        "Changing your flight is an option, but it depends on your ticket's terms and conditions. Please share your booking information for more information.",
+        "We do allow flight changes in certain cases. To check your eligibility and options, please provide your booking details."
+      ]
+    },
+    {
+      "tag": "travel_documentation",
+      "patterns": [
+        "What travel documents do I need?",
+        "Tell me about required travel documents",
+        "Passport and visa requirements"
+      ],
+      "responses": [
+        "Travel document requirements vary by destination and your nationality. I recommend checking with the embassy or consulate of your destination for the most up-to-date information.",
+        "It's important to have the right travel documents for your trip. Visa and passport requirements vary by country. Please check with the relevant authorities for accurate information.",
+        "To ensure a smooth journey, make sure you have the necessary travel documents such as a valid passport and any required visas. Requirements differ by country, so check with the respective authorities."
+      ]
+    },
+    {
+      "tag": "pet_travel",
+      "patterns": [
+        "Can I travel with my pet?",
+        "Tell me about pet travel policies",
+        "Bringing pets on board"
+      ],
+      "responses": [
+        "Yes, we do have policies for traveling with pets. Please provide details about your pet, such as its size and breed, so I can assist you further.",
+        "You can bring your pet on board, but there are specific guidelines to follow. Please share more information about your pet so I can provide accurate details.",
+        "Traveling with pets is allowed, but there are regulations to ensure their safety and comfort. Please let me know your pet's details for specific guidelines."
+      ]
+    },
+    {
+      "tag": "lost_luggage",
+      "patterns": [
+        "My luggage is lost. What should I do?",
+        "Help with lost baggage",
+        "Lost luggage assistance"
+      ],
+      "responses": [
+        "I'm sorry to hear about your lost luggage. Please report it to the airline's baggage service desk at the airport. They will assist you in locating and retrieving your luggage.",
+        "Lost luggage can be distressing. Please go to the airline's baggage service desk at the airport to file a report. They will work to resolve the issue.",
+        "In the unfortunate event of lost luggage, visit the airline's baggage service desk at the airport. They will guide you through the process of locating and recovering your bags."
+      ]
+    },
+    {
+      "tag": "customer_feedback",
+      "patterns": [
+        "How can I provide feedback about my experience?",
+        "Tell me about customer feedback",
+        "Feedback and complaints"
+      ],
+      "responses": [
+        "We appreciate your feedback! You can submit your feedback and comments through our website's 'Contact Us' page. We value your input to improve our services.",
+        "Customer feedback is important to us. You can share your thoughts and suggestions through our website's feedback form or by contacting our customer support team.",
+        "Your feedback is valuable to us. You can provide feedback or file complaints through our website or by reaching out to our customer support team."
+      ]
+    }
+  ]
+}

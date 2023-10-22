@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.section1{
+    display: block;
+}
+
+.gif-div{
+    display: flex;
+    margin-top: 10px;
+}
+.gif-div img{
+    margin: auto;
+    width: 300px;
+}
+
+.header-before{
+    font-size: 1.6em;
+    text-align: center;
+    color: orange;
+}
+
+.below-header{
+    text-align: center;
+    color: rgb(70, 70, 70);
+    margin-top: 10px;
+    font-size: .95em;
+}
+
+
+@keyframes enlarge{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.svg-div-c{
+    display: flex;
+    margin-top: 110px;
+}
+
+.header-after{
+    color: green;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+}
+.details-div{
+    text-align: center;
+    margin-top: 20px;
+}
+.ticket-div{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.ticket-div button{
+    margin-bottom: 10px;
+}
+.flight2{
+    display: none;
+}
+
+
+.section3{
+    display: none;
+}
+.svg-div-e{
+    display: flex;
+    margin-top: 110px;
+}
+
+.section3 .svg-div-e svg{
+    animation-name: enlarge;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    color: rgb(32, 227, 100);
+    margin: auto;
+}
+.star{
+    color: green;;
+}
+
+
+
+@media (max-width: 376px){
+    .svg-div-c{
+        margin-top: 50px;
+    }
+    .gif-div{
+        margin-top: 0;
+    }
+    .header-before, .header-after{
+        font-size: 1.3em;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .header-after{
+        margin-top: 60px;
+    }
+    .below-header{
+        font-size: .9em;
+    }
+    .details-div{
+        font-size: .9em;
+    }
+    .ticket-div button{
+        font-size: .9rem;
+    }
+}
+    </style>
+      <script>
+        // Wait for the DOM to load
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get references to the sections
+            const section1 = document.querySelector(".section1");
+            const section3 = document.querySelector(".section3");
+
+            // Initially hide section3
+            section3.style.display = "none";
+
+            // After 15 seconds, show section3 and hide section1
+            setTimeout(function () {
+                section1.style.display = "none";
+                section3.style.display = "block";
+            }, 10000); // 15000 milliseconds = 15 seconds
+        });
+    </script>
+</head>
+<body>
+    
+
+
+
+
+
+    <section class="section section1">
+        <div class="gif-div">
+            <img src="/static/img/process.gif" alt="processing">
+        </div>
+        <div class="header-before">
+            Processing Payment...
+        </div>
+        <div class="below-header">
+            Please wait while we are processing your payment.
+        </div>
+    </section>
+    <input type="hidden" class="ref1" value="ticket1.ref_no">
+    <input type="hidden" class="ref2" value="ticket2.ref_no">
+   
+    <section class="section section3">
+        <div class="svg-div-e">
+            <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-check-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+            </svg>
+        </div>
+        <div class="header-after star">
+            Congratulations, Your flight booking is confirmed.
+        </div>
+        
+        <div class="ticket-div">
+            <button class="btn btn-outline-primary" type="button" onclick="window.location.href = '/'">Print Ticket</button>
+        </div>
+    </section>
+   
+
+</body>
+</html>
