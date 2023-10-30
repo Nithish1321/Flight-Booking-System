@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Your head content here -->
+</head>
+<body>
+    <header>
+        <!-- Your header content here -->
+        <!-- Add the profile display section in the top right corner -->
+        <div id="profile-section">
+            {% if user_id %}
+                <p>Welcome, {{ user_info.username }}</p>
+                <a href="{{ url_for('profile') }}">Profile</a> | <a href="{{ url_for('logout') }}">Logout</a>
+            {% else %}
+                <a href="{{ url_for('login') }}">Login</a> | <a href="{{ url_for('signup') }}">Sign Up</a>
+            {% endif %}
+        </div>
+    </header>
+
+    <!-- Your main content here -->
+</body>
+</html>

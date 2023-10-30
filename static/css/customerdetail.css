@@ -59,3 +59,18 @@ textarea[id="specialRequests"]{
     border: 1px solid #ccc; /* Reduce the thickness of input box borders */
     border-radius: 4px; /* Add some border radius for a softer look */
 }
+.styled-button {
+    margin: 20px;
+    margin-left: 140px;
+    background-color: #ffe165; /* Set the background color to #ffe165 */
+    color: #000; /* Set the text color to black */
+    padding: 10px 20px; /* Add padding for a better appearance */
+    border: none; /* Remove the button border */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Set the font size */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+.styled-button:hover {
+    background-color: #ffcf33; /* Change the background color on hover */
+}
